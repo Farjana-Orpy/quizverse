@@ -1,114 +1,35 @@
-# 🎯 QuizVerse
+# QuizVerse
 
-A full-stack MERN Quiz Platform built using React, Node.js, Express, and MongoDB.
+**Learn, challenge yourself, and track your progress.**
 
-Users can create accounts, log in securely, take quizzes, track scores, and compete on the leaderboard.
+QuizVerse is a full-stack quiz application with user accounts, interactive quizzes, scores, and a leaderboard.
 
----
+## Features
 
-# 🚀 Features
+- **User accounts** — Sign up and sign in.
+- **Interactive quizzes** — Answer questions and view results.
+- **Score tracking** — Review quiz performance.
+- **Leaderboard** — Compare results with other participants.
+- **Responsive interface** — Use the app across screen sizes.
 
-- 🔐 JWT Authentication
-- 👤 User Signup & Login
-- 🧠 Dynamic Quiz System
-- 📊 Leaderboard
-- 🌙 Dark Mode
-- 📱 Responsive Design
-- 🛡 Protected Routes
-- ☁ MongoDB Atlas Database
+## Technology
 
----
+React · Vite · Node.js · Express · MongoDB · JWT
 
-# 🛠 Technologies Used
+## Repository guide
 
-## Frontend
-- React
-- React Router
-- Axios
-- CSS
+| Location | Contents |
+| --- | --- |
+| [`client/`](client/) | React frontend |
+| [`server/`](server/) | API, authentication, and database |
+| [`screenshots/`](screenshots/) | Application screenshots |
 
-## Backend
-- Node.js
-- Express.js
+## Local setup
 
-## Database
-- MongoDB Atlas
-- Mongoose
+1. Run `npm install` and `npm run dev` in `client/`.
+2. Run `npm install` and `node index.js` in `server/`.
+3. Configure the server's `MONGO_URI` and `JWT_SECRET` environment variables.
 
-## Authentication
-- JWT (JSON Web Token)
+Never commit real credentials or `.env` files.
 
----
-
-# 📂 Project Structure
-
-```bash
-QuizVerse/
-│
-├── client/
-│   ├── src/
-│   └── public/
-│
-├── server/
-│   ├── models/
-│   ├── routes/
-│   └── index.js
-│
-└── README.md
-```
-
----
-
-# ▶️ How to Run the Project
-
-## Clone Repository
-
-```bash
-git clone https://github.com/Farjana-Orpy/quizverse.git
-```
-
-## Install Frontend
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-## Install Backend
-
-```bash
-cd server
-npm install
-node index.js
-```
-
----
-
-# 🔐 Environment Variables
-
-Create a `.env` file inside the server folder:
-
-```env
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
-PORT=5000
-```
-
----
-
-# 🎯 Future Improvements
-
-- Quiz Categories
-- User Quiz History
-- Timer Analytics
-- Public Deployment
-- AI Generated Questions
-
----
-
-# 👨‍💻 Author
-
-Farjana Zaman Orpy
-
-CSE Student | MERN Stack Learner
+*Built as a practical full-stack web development project.*
